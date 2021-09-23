@@ -1,6 +1,6 @@
 # markhuyong personnel package
 
-name: markhuyong-package
+name: markhuyong-personnel
 parent: default
 
 matches:

@@ -1,5 +1,5 @@
 ---
-package_name: "markhuyong-package"
+package_name: "markhuyong-personnel"
 package_title: "Markhuyong Package"
 package_desc: "A personnel package to say Hello World."
 package_version: "0.1.0"
