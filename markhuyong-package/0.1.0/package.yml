@@ -1,0 +1,29 @@
+# markhuyong personnel package
+
+name: markhuyong-package
+parent: default
+
+matches:
+  - trigger: ":hw"
+    replace: "hello world"
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m-%d-%Y"
+
+  # Weekly Report
+  - trigger: ":weekly-report"
+    replace: "## 【周报】工程院-系统平台-容器平台-平台开发-杨晶晶-{{monday}}-{{friday}}\n\n [ ] OpenCloud B版"
+    vars:
+      - name: monday
+        type: gdate
+        params:
+          format: "-dmonday +%Y%m%d"
+      - name: friday
+        type: gdate
+        params:
+          format: "-dfriday +%Y%m%d"
